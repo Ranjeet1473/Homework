@@ -13,3 +13,20 @@ for n in n_values:
     plt.xlabel("Sum of Dice")
     plt.ylabel("Frequency")
     plt.show()
+
+""" Answer no 4: 
+When running the simulation for increasing values of n, you observe that for smaller n (e.g., 500 or 1000),
+the histogram of dice sums shows noticeable fluctuations and does not match the theoretical probabilities well. 
+As n increases (e.g., 5000 or 10000), the histogram stabilizes, and the frequencies of the sums align more 
+closely with the expected probabilities. For very large n (e.g., 100000), the histogram almost perfectly matches
+the theoretical distribution. This demonstrates the law of large numbers, where increasing the sample size reduces
+randomness and brings observed results closer to the expected values."""
+
+""" Answer no 5:
+This phenomenon is related to regression to the mean, which describes how extreme or unusual outcomes
+in small samples tend to move closer to the average as the sample size increases. In the dice simulation, 
+for small n, the frequencies of sums like 2 or 12 may deviate significantly from their theoretical 
+probabilities due to randomness. As n grows, these frequencies regress toward the mean, stabilizing and 
+aligning with the expected probabilities. This illustrates how larger sample sizes reduce the impact of randomness, 
+ensuring results converge to the expected distribution.
+"""
